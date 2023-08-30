@@ -33,6 +33,9 @@
   O CSS está entre as principais linguagens da web aberta.   
 </p>
 
+</br>
+</br>
+
 <hr/>
  <p align="center">
     Documentos pra auxiliar os estudos:
@@ -54,11 +57,7 @@
       <img src="https://github.com/barbcastro.png" width="100px" />
     </td>
     <td>
-      <img src="https://github.com/rocketseat-education.png" width="100px" />
-    </td>
-    <td>
       Feito por <a href="https://github.com/barbcastro">Barbara Castro</a>🙋🏽‍♀️
-      <br> Junto com <a href="https://rocketseat.com.br">Rocketseat</a> 🚀.
     </td>
   </tr>
 </table>
