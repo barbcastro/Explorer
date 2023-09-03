@@ -1,6 +1,6 @@
 <h1 align="center">Rocket.sect - Desafio 01 🔒</h1>
 
- <img src="Desafio01/images/preview.jpg" alt="preview do projeto"/>
+ <img src="https://github.com/barbcastro/Explorer/blob/main/Stage-02/Desafios/Desafio01/images/preview.jpg?raw=true" alt="preview do projeto"/>
 
  <h2>💻 Desafio:</h2>
  <p>
