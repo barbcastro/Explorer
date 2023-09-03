@@ -5,3 +5,6 @@
 <p><strong>Projetos:</strong>
   Projetos realizados durante o curso, colocando em prática as Hard Skills estudas.
 </p>
+<p><strong>Desafios:</strong>
+  Desafios realizados sozinha durante o curso, colocando em prática as Hard Skills estudas.
+</p>
