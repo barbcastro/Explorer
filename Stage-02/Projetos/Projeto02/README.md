@@ -1,4 +1,4 @@
-<h1 align="center">Treine.me - Desafio 02 🏋🏽</h1>
+<h1 align="center">Treine.me - Projeto 02 🏋🏽</h1>
  
  <img src="https://github.com/barbcastro/Explorer/blob/main/Stage-02/Projetos/Projeto02/images/preview.png?raw=true"/>
  
