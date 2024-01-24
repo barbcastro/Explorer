@@ -1,5 +1,5 @@
 <h1 align="center"> Cheesecake Receita - Desafio 01 🍰</h1>
-<img src="https://github.com/barbcastro/Explorer/blob/main/Stage-03/Responsividade/Projeto-01/Desafio-01/img/preview.png">
+<img src="https://github.com/barbcastro/Explorer/blob/main/Stage-03/M%C3%B3dulo-02/Projetos/Desafio-01/img/preview.png">
 
 <h2>📝 Projeto:</h2>
 <p>
