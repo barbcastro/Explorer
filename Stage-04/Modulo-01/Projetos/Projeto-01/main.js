@@ -25,7 +25,7 @@ btnTry.addEventListener("click", handleTryClick)
 btnReload.addEventListener("click", reloadGame)
 document.addEventListener("keypress", changeScreenByEnter)
 
-//funções cllback
+//funções callback
 function handleTryClick(event) {
   event.preventDefault(event) 
 
