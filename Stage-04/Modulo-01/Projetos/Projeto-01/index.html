@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ab8ffcf404.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Adivinhação</title>
+  </head>
+  <body>
+
+    <main>
+
+      <div class="screen1">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Adivinhe um número entre 0 e 10</p>
+        <form id="my-form" action="">
+          <input 
+            class="number-guess"
+            id="guess" 
+            type="number"
+            autocomplete="off"
+            />
+          <button type="submit" class="button-try">Tentar</button>
+        </form>
+        <p class="tentative-message"></p>
+      </div>
+
+      <div class="screen2 hide">
+        <h1></h1>
+        <button type="button" class="button-again">Jogar Novamente</button>
+      </div>
+
+    </main>   
+
+    <script src="./main.js"></script>
+  </body>
+</html>

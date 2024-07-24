@@ -1,0 +1,375 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-header: 'Staatliches', sans-serif;
+  --font-main: 'Roboto', sans-serif;
+  --font-main-mobile: 'Palanquin', sans-serif;
+  --font-card: 'Staatliches', sans-serif;
+  --font-footer: 'Open Sans', sans-serif;
+
+
+  --color-header: hsla(0, 0%, 100%, 1);
+  --color-main: hsla(274, 84%, 12%, 1);
+  --color-card:hsla(232, 17%, 35%, 1);
+
+  --bg-header:hsla(218, 17%, 62%, 1);
+  --bg-herder-title:hsla(275, 18%, 79%, 1);
+  --bg-main:hsla(233, 100%, 97%, 1);
+  --bg-card:hsla(312, 91%, 96%, 1);
+
+  --fs-header: 4rem;
+  --fs-main:2rem;
+}
+
+body {
+  background: var(--bg-main);
+
+}
+
+header {
+  background: var(--bg-header);
+  
+  text-align: center;
+  
+  width: 100%;
+  height: 30rem;
+}
+
+header img {
+  margin: 3.2rem;
+
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+header img:hover {
+  transition: all 3s;
+
+  transform: rotate(360deg);
+}
+
+header h1 {
+  width: 100%;
+  height: 4.9rem;
+  
+  background: var(--bg-herder-title);
+  color: var(--color-header);
+
+  font-family: var(--font-header);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 2px;
+
+  padding: 8px;
+  margin-bottom: 31rem;
+}
+
+main {
+ padding: 1.4rem 2.5rem;
+
+}
+
+.text p {
+  
+  text-align: center;
+  font-feature-settings: 'subs' on;
+  
+  font-family: var(--font-main-mobile);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: var(--color-main);
+  
+  margin-bottom: 6.3rem;
+  
+  animation: topdown 700ms;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 3.2rem;
+
+  animation: downtop 700ms;
+}
+
+.card {
+  position: relative;
+
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+
+}
+
+.card img {
+  width: 100%;
+
+  transition: all 200ms;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+
+  opacity: 0.7;
+}
+
+#img3, #img6 {
+  display: none;
+} 
+
+.card h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  width: 12rem;
+  height: 3.5rem;
+
+  font-family: var(--font-card);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 1px;
+  color: var(--color-card);
+  
+  text-align: center;
+
+  background: var(--bg-card);
+  border-radius: 2rem;
+
+  animation: topdown 700ms;
+}
+
+
+footer p, a {
+  font-family: var(--font-footer);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  
+  color: var(--color-card);
+
+  text-align: center;
+
+  margin: 4rem 0 3rem;
+}
+
+footer a {
+  text-decoration: none;
+
+}
+
+footer a:hover {
+  color: var(--color-main);
+  font-weight: bold;
+
+  transition: all 200ms;
+}
+
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width:700px) {
+  .text p::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. ";
+    text-align: center;
+    font-feature-settings: 'subs' on;
+    
+    font-family: var(--font-main-mobile);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5rem;
+    color: var(--color-main);
+    
+    margin-bottom: 6.3rem;
+    
+    animation: topdown 700ms;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+
+    grid-template-areas: 
+    "img1 img4"
+    "img3 img5";
+  }
+
+  .card-wrapper div:nth-child(1) {
+    grid-area: img1;
+  }
+
+  .card-wrapper div:nth-last-child(2) {
+    grid-area: img3;
+  }
+
+  .card-wrapper div:nth-last-child(3) {
+    grid-area: img4;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    display: flex;
+  }
+  
+  header{
+    width: 38rem;
+    height: auto;
+  }
+
+  header h1 {
+    height: 7rem;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    font-size: 4.8rem;
+    line-height: 3.4rem;
+
+    padding: 2.1rem;
+    margin-bottom: 3.2rem;
+  }
+
+  header::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem. ";
+
+    text-align: center;
+
+    font-family: var(--font-main);
+    color: var(--color-header);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    width: 27rem;
+   
+    padding: 3.2rem 5rem;
+
+    display: flex;
+
+    animation: topdown 700ms;
+  }
+
+  .text p {
+    display: none;
+  }
+
+  main {
+    display: flex;
+
+    padding: 6rem 4rem 7rem;
+  }
+
+  #img3, #img6 {
+    display: block;
+  }
+
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas: 
+      "img1 img2 img3"
+      "img5 img2 img6"
+      "img5 img4 img6";      
+  }
+
+  .card-wrapper div:nth-child(1) {
+      grid-area: img1;
+  }
+  .card-wrapper div:nth-child(2) {
+      grid-area: img2;    
+  }
+  .card-wrapper div:nth-child(3) {
+      grid-area: img3;     
+  }
+  .card-wrapper div:nth-child(4) {
+      grid-area: img4;      
+  }
+  .card-wrapper div:nth-child(5) {
+      grid-area: img5;       
+  }
+  .card-wrapper div:nth-child(6) {
+      grid-area: img6;      
+  }
+
+  .card h2 {
+    display: none;
+  }
+ 
+  footer p, a {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:1500px) {
+  header {
+    width: 60rem;
+  }
+
+  header::after {
+    width: 48rem;
+    height: 50rem;
+
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .flex-direction {
+    width: 100%;
+  }
+
+  main {
+    padding: 7rem 10rem 3rem;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    
+    gap: 5rem;
+  }
+
+  footer p, a {
+    margin-top: 5rem;
+  }
+}
+
+@media(min-width:2000px) {
+  header::after {
+    line-height: 5.2rem;
+  }
+
+  footer p, a {
+    font-size: 4rem;
+  }
+}
